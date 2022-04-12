@@ -12,9 +12,9 @@ class Index extends Component
     /**
      * @return Factory|View|Application
      */
-    public function render(): Factory|View|Application
-    {
+    public function render(): Factory|View|Application    {
 
-        return view('livewire.main.index');
+        return view('livewire.main.index')
+            ->layout('layout.guest');
     }
 }
